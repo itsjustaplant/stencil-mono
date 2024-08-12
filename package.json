@@ -1,0 +1,9 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "lerna": "^8.1.5",
+    "typescript": "^5.5.3"
+  }
+}

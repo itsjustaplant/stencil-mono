@@ -1,0 +1,3 @@
+import type { JSX } from 'stencil-library';
+export declare const LeafComponent: import("react").ForwardRefExoticComponent<JSX.LeafComponent & Omit<import("react").HTMLAttributes<HTMLLeafComponentElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLLeafComponentElement>>;
+export declare const ParentComponent: import("react").ForwardRefExoticComponent<JSX.ParentComponent & Omit<import("react").HTMLAttributes<HTMLParentComponentElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLParentComponentElement>>;
