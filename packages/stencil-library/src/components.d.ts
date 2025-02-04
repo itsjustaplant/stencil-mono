@@ -6,45 +6,58 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface LeafComponent {
+    interface PlantCard {
     }
-    interface ParentComponent {
+    interface PlantList {
+    }
+    interface PlantListItem {
     }
 }
 declare global {
-    interface HTMLLeafComponentElement extends Components.LeafComponent, HTMLStencilElement {
+    interface HTMLPlantCardElement extends Components.PlantCard, HTMLStencilElement {
     }
-    var HTMLLeafComponentElement: {
-        prototype: HTMLLeafComponentElement;
-        new (): HTMLLeafComponentElement;
+    var HTMLPlantCardElement: {
+        prototype: HTMLPlantCardElement;
+        new (): HTMLPlantCardElement;
     };
-    interface HTMLParentComponentElement extends Components.ParentComponent, HTMLStencilElement {
+    interface HTMLPlantListElement extends Components.PlantList, HTMLStencilElement {
     }
-    var HTMLParentComponentElement: {
-        prototype: HTMLParentComponentElement;
-        new (): HTMLParentComponentElement;
+    var HTMLPlantListElement: {
+        prototype: HTMLPlantListElement;
+        new (): HTMLPlantListElement;
+    };
+    interface HTMLPlantListItemElement extends Components.PlantListItem, HTMLStencilElement {
+    }
+    var HTMLPlantListItemElement: {
+        prototype: HTMLPlantListItemElement;
+        new (): HTMLPlantListItemElement;
     };
     interface HTMLElementTagNameMap {
-        "leaf-component": HTMLLeafComponentElement;
-        "parent-component": HTMLParentComponentElement;
+        "plant-card": HTMLPlantCardElement;
+        "plant-list": HTMLPlantListElement;
+        "plant-list-item": HTMLPlantListItemElement;
     }
 }
 declare namespace LocalJSX {
-    interface LeafComponent {
+    interface PlantCard {
     }
-    interface ParentComponent {
+    interface PlantList {
+    }
+    interface PlantListItem {
     }
     interface IntrinsicElements {
-        "leaf-component": LeafComponent;
-        "parent-component": ParentComponent;
+        "plant-card": PlantCard;
+        "plant-list": PlantList;
+        "plant-list-item": PlantListItem;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "leaf-component": LocalJSX.LeafComponent & JSXBase.HTMLAttributes<HTMLLeafComponentElement>;
-            "parent-component": LocalJSX.ParentComponent & JSXBase.HTMLAttributes<HTMLParentComponentElement>;
+            "plant-card": LocalJSX.PlantCard & JSXBase.HTMLAttributes<HTMLPlantCardElement>;
+            "plant-list": LocalJSX.PlantList & JSXBase.HTMLAttributes<HTMLPlantListElement>;
+            "plant-list-item": LocalJSX.PlantListItem & JSXBase.HTMLAttributes<HTMLPlantListItemElement>;
         }
     }
 }

@@ -1,16 +1,18 @@
 import { Component, h, Host } from '@stencil/core';
 
 @Component({
-  tag: 'leaf-component',
+  tag: 'plant-list-item',
   shadow: false,
-  scoped: true
+  scoped: true,
 })
-export class LeafComponent {
+export class ListItemComponent {
   render() {
     return (
       <Host>
-        <span>leaf component</span>
-    </Host>
+        <div>
+          <slot />
+        </div>
+      </Host>
     );
   }
 }
