@@ -8,5 +8,6 @@ import type { JSX } from 'stencil-library';
 import { applyPolyfills, defineCustomElements } from 'stencil-library/loader';
 
 applyPolyfills().then(() => defineCustomElements());
-export const LeafComponent = /*@__PURE__*/createReactComponent<JSX.LeafComponent, HTMLLeafComponentElement>('leaf-component');
-export const ParentComponent = /*@__PURE__*/createReactComponent<JSX.ParentComponent, HTMLParentComponentElement>('parent-component');
+export const PlantCard = /*@__PURE__*/createReactComponent<JSX.PlantCard, HTMLPlantCardElement>('plant-card');
+export const PlantList = /*@__PURE__*/createReactComponent<JSX.PlantList, HTMLPlantListElement>('plant-list');
+export const PlantListItem = /*@__PURE__*/createReactComponent<JSX.PlantListItem, HTMLPlantListItemElement>('plant-list-item');
