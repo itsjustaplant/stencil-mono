@@ -1,4 +1,4 @@
-import { Component, h, Host } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
   tag: 'plant-card',
@@ -6,6 +6,7 @@ import { Component, h, Host } from '@stencil/core';
   scoped: true,
 })
 export class CardComponent {
+  @Prop({ attribute: 'role' }) hostRole?: 'button' | 'link' = 'button';
   render() {
     return (
       <Host>

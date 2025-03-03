@@ -7,6 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PlantCard {
+        "hostRole"?: 'button' | 'link';
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "role"?: 'button' | 'link';
     }
     interface PlantList {
     }
@@ -40,6 +45,11 @@ declare global {
 }
 declare namespace LocalJSX {
     interface PlantCard {
+        "hostRole"?: 'button' | 'link';
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "role"?: 'button' | 'link';
     }
     interface PlantList {
     }

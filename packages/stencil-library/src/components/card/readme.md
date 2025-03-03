@@ -5,6 +5,13 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property   | Attribute | Description | Type                 | Default    |
+| ---------- | --------- | ----------- | -------------------- | ---------- |
+| `hostRole` | `role`    |             | `"button" \| "link"` | `'button'` |
+
+
 ## Dependencies
 
 ### Used by
